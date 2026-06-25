@@ -1,12 +1,13 @@
-//*************************************************
+//******************************************************************************
 //
 //  A short demo of using shaders in Three.js
 //
 //  Shader Distortion with Texture Selection
 //
 //      Ringo Cheung 2025/11/27
+//      2026/6/25 - added import map to index.html for three.js and its addons
 //
-//*************************************************
+//*******************************************************************************
 
 
 import * as THREE from 'three';
