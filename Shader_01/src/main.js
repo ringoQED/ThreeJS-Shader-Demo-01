@@ -6,6 +6,7 @@
 //
 //      Ringo Cheung 2025/11/27
 //      2026/6/25 - added import map to index.html for three.js and its addons
+//      2026/6/26 - moved texture files to public folder for Netlify deployment
 //
 //*******************************************************************************
 
@@ -14,17 +15,20 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import vertexShader from './vshader.js';
 import fragmentShader from './fshader.js';
-//import galaxyImage from '../image/galaxy.jpg';
-//import uvcheckerImage from '../image/uvchecker.png';
-//import waveImage from '../image/wave.jpg';
-//import glassImage from '../image/glassrain.jpg';
-//import woodImage from '../image/wood.jpg';
+
+import galaxyImage from '../public/galaxy.jpg';
+import uvcheckerImage from '../public/uvchecker.png';
+import waveImage from '../public/wave.jpg';
+import glassImage from '../public/glassrain.jpg';
+import woodImage from '../public/wood.jpg';
+
 //For Netlify deployment, use the following method to load images
-const galaxyImage = new URL('../image/galaxy.jpg', import.meta.url).href;
-const uvcheckerImage = new URL('../image/uvchecker.png', import.meta.url).href;
-const waveImage = new URL('../image/wave.jpg', import.meta.url).href;
-const glassImage = new URL('../image/glassrain.jpg', import.meta.url).href;
-const woodImage = new URL('../image/wood.jpg', import.meta.url).href;
+//const galaxyImage = new URL('../image/galaxy.jpg', import.meta.url).href;
+//const uvcheckerImage = new URL('../image/uvchecker.png', import.meta.url).href;
+//const waveImage = new URL('../image/wave.jpg', import.meta.url).href;
+//const glassImage = new URL('../image/glassrain.jpg', import.meta.url).href;
+//const woodImage = new URL('../image/wood.jpg', import.meta.url).href;
+
 import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 import Stats from 'three/addons/libs/stats.module.js'
 
